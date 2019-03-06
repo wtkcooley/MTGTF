@@ -53,4 +53,25 @@
       console.log('not logged in');
     }
   })
+
+  //Add signup event
+  btnSignUp.addEventListener('click', e => {
+    //Get email and pass
+    //TODO: Check for real email
+    const email = txtEmail.value;
+    const pass = txtPassword.value;
+    const auth = firebase.auth();
+    //Sign in
+    const promise = auth.createUserWithEmailPassowrd(email, pass);
+    promise
+      .catch(e => console.log(e.message))
+  })
+
+  firebase.auth().onAuthStateChanged(firebaseUser => {
+    if(firebaseUser) {
+      console.log(firebaseUser);
+    } else {
+      console.log('not logged in');
+    }
+  })
 }());
