@@ -170,5 +170,43 @@
     <div class="search-card-holder" id="card-holder-div">
     </div>
   </div>
+<div class="container">
+    <!--<input id="txtTradeCards" type="cards" placeholder="Enter cards you want to trade here...">-->
+    <textarea class="form-control" id="txtTradeCards">
+      Enter cards you want to trade here...
+    </textarea>
+    <input id="txtTradeCards" type="cards" placeholder="Search for Cards">
+    <input id="txtTradeCardsQuantity" type="cards" placeholder="Quantity">
+    <button id="btnAddCardToList" class="btn btn-action" onclick="addCardToList()">
+      Add to List
+    </button>
+    <div class="container">
+      <button id="btnAddToTradeBinder" class="btn btn-action" onclick="addToTradeBinder()">
+        Add All Cards
+      </button>
+    </div>
+    <p id="demo"></p>
+  </div>
 </body>
+<script>
+
+// Initialize Firebase
+var config = {
+apiKey: "AIzaSyBqJxjbEyC2UCo4EwgrK89fRLur9vhfxyQ",
+authDomain: "mtg-trader-12f5e.firebaseapp.com",
+databaseURL: "https://mtg-trader-12f5e.firebaseio.com",
+projectId: "mtg-trader-12f5e",
+storageBucket: "mtg-trader-12f5e.appspot.com",
+messagingSenderId: "861838062847"
+};
+firebase.initializeApp(config);
+</script>
+
+<!-- Link to script page -->
+<!-- <script src="js/script.js"></script> -->
+
+<script>
+//autocomplete(document.getElementById("cardSearchInput"), cards);
+</script>
+
 </html>
