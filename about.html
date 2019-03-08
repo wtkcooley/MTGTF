@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>About Us</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/shop-homepage.css" rel="stylesheet">
+
+  <!-- Firebase Script -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>
+  <!--<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>-->
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand a-custom-padding" href="#">MTG Trade Finder</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <!--
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+          -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Account</a>
+          </li>
+        </ul>
+        <!--Make sure the form has the autocomplete function switched off:-->
+        <form autocomplete="off" class="form-inline" action="/action_page.php">
+          <div class="autocomplete">
+            <input class="form-control mr-sm-2" id="myInput" type="text" name="myCard" placeholder="Search for cards">
+          </div>
+          <input class="btn btn-success" type="submit">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <h1 class="my-4">Your Shops</h1>
+        <div class="list-group">
+          <a href="#" class="list-group-item">Category 1</a>
+          <a href="#" class="list-group-item">Category 2</a>
+          <a href="#" class="list-group-item">Category 3</a>
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+          <div class="about-text-custom">
+            <h1 class="h1-custom aboout-text-h1-custom"> Our Mission </h1>
+            <p class="about-text-p-custom"> Our mission is plain and simple, provide a
+              quality service to our deedciated users and the MTG community as a whole.
+              <br><br>
+              Here we believe all users regardless of skill level or time playing deserve
+              access to the finest cards. Thus the program: MTG Trade Finders.
+              <br><br>
+              Please, help support us and use our referal links or donate to our page
+              <br><br>
+              @MTGTradeFindersOfficial
+              <br><br>
+              - William and John
+          </div>
+          <!-- /.about-text-custom -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBqJxjbEyC2UCo4EwgrK89fRLur9vhfxyQ",
+    authDomain: "mtg-trader-12f5e.firebaseapp.com",
+    databaseURL: "https://mtg-trader-12f5e.firebaseio.com",
+    projectId: "mtg-trader-12f5e",
+    storageBucket: "mtg-trader-12f5e.appspot.com",
+    messagingSenderId: "861838062847"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+  <!-- Link to script page -->
+  <!--<script src="js/script.js"></script>-->
+
+  <script>
+    autocomplete(document.getElementById("myInput"), cards);
+  </script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>About Us</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/shop-homepage.css" rel="stylesheet">
+
+  <!-- Firebase Script -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>
+  <!--<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>-->
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand a-custom-padding" href="#">MTG Trade Finder</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <!--
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+          -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Account</a>
+          </li>
+        </ul>
+        <!--Make sure the form has the autocomplete function switched off:-->
+        <form autocomplete="off" class="form-inline" action="/action_page.php">
+          <div class="autocomplete">
+            <input class="form-control mr-sm-2" id="myInput" type="text" name="myCard" placeholder="Search for cards">
+          </div>
+          <input class="btn btn-success" type="submit">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <h1 class="my-4">Your Shops</h1>
+        <div class="list-group">
+          <a href="#" class="list-group-item">Category 1</a>
+          <a href="#" class="list-group-item">Category 2</a>
+          <a href="#" class="list-group-item">Category 3</a>
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+          <div class="about-text-custom">
+            <h1 class="h1-custom aboout-text-h1-custom"> Our Mission </h1>
+            <p class="about-text-p-custom"> Our mission is plain and simple, provide a
+              quality service to our deedciated users and the MTG community as a whole.
+              <br><br>
+              Here we believe all users regardless of skill level or time playing deserve
+              access to the finest cards. Thus the program: MTG Trade Finders.
+              <br><br>
+              Please, help support us and use our referal links or donate to our page
+              <br><br>
+              @MTGTradeFindersOfficial
+              <br><br>
+              - William and John
+          </div>
+          <!-- /.about-text-custom -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBqJxjbEyC2UCo4EwgrK89fRLur9vhfxyQ",
+    authDomain: "mtg-trader-12f5e.firebaseapp.com",
+    databaseURL: "https://mtg-trader-12f5e.firebaseio.com",
+    projectId: "mtg-trader-12f5e",
+    storageBucket: "mtg-trader-12f5e.appspot.com",
+    messagingSenderId: "861838062847"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+  <!-- Link to script page -->
+  <!--<script src="js/script.js"></script>-->
+
+  <script>
+    autocomplete(document.getElementById("myInput"), cards);
+  </script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
