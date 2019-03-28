@@ -1,0 +1,58 @@
+[debug] [2019-03-18T16:30:28.891Z] ----------------------------------------------------------------------
+[debug] [2019-03-18T16:30:28.894Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\S190023\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-03-18T16:30:28.894Z] CLI Version:   6.5.0
+[debug] [2019-03-18T16:30:28.894Z] Platform:      win32
+[debug] [2019-03-18T16:30:28.894Z] Node Version:  v10.15.2
+[debug] [2019-03-18T16:30:28.895Z] Time:          Mon Mar 18 2019 12:30:28 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-03-18T16:30:28.895Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-18T16:30:28.909Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-18T16:30:28.910Z] > authorizing via signed-in user
+[debug] [2019-03-18T16:30:28.910Z] [iam] checking project mtg-trader-12f5e for permissions ["firebase.projects.get"]
+[debug] [2019-03-18T16:30:28.912Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-03-18T16:30:28.912Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-03-18T16:30:29.089Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-18T16:30:29.094Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mtg-trader-12f5e:testIamPermissions  
+
+[debug] [2019-03-18T16:30:29.229Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-18T16:30:29.230Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/mtg-trader-12f5e  
+ 
+[debug] [2019-03-18T16:30:29.360Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\S190023\Downloads\MTGTF-master'...
+[info] 
+[debug] [2019-03-18T16:30:29.363Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/861838062847/clients/_:getWebAppConfig  
+ 
+[debug] [2019-03-18T16:30:29.679Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-03-20T16:19:12.284Z] ----------------------------------------------------------------------
+[debug] [2019-03-20T16:19:12.286Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\S190023\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-03-20T16:19:12.287Z] CLI Version:   6.5.0
+[debug] [2019-03-20T16:19:12.287Z] Platform:      win32
+[debug] [2019-03-20T16:19:12.287Z] Node Version:  v10.15.2
+[debug] [2019-03-20T16:19:12.292Z] Time:          Wed Mar 20 2019 12:19:12 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-03-20T16:19:12.292Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-20T16:19:12.310Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-20T16:19:12.310Z] > authorizing via signed-in user
+[debug] [2019-03-20T16:19:12.311Z] [iam] checking project mtg-trader-12f5e for permissions ["firebase.projects.get"]
+[debug] [2019-03-20T16:19:12.312Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-03-20T16:19:12.313Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-03-20T16:19:12.484Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-20T16:19:12.490Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mtg-trader-12f5e:testIamPermissions  
+
+[debug] [2019-03-20T16:19:12.848Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-20T16:19:12.849Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/mtg-trader-12f5e  
+ 
+[debug] [2019-03-20T16:19:13.003Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\S190023\Downloads\MTGTF-master'...
+[info] 
+[debug] [2019-03-20T16:19:13.006Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/861838062847/clients/_:getWebAppConfig  
+ 
+[debug] [2019-03-20T16:19:13.251Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
