@@ -118,9 +118,9 @@
           var uid = user.uid;
           var providerData = user.providerData;
           // [START_EXCLUDE]
-          document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
+
           document.getElementById('signout').disabled = false;
-          document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
+      
           // [END_EXCLUDE]
         } else {
           // User is signed out.
@@ -172,17 +172,23 @@
   </div>
 <div class="container">
     <!--<input id="txtTradeCards" type="cards" placeholder="Enter cards you want to trade here...">-->
-    <textarea class="form-control" id="txtTradeCards">
-      Enter cards you want to trade here...
+    <textarea class="form-control" id="txtTradeCards" readonly>
     </textarea>
-    <input id="txtTradeCards" type="cards" placeholder="Search for Cards">
-    <input id="txtTradeCardsQuantity" type="cards" placeholder="Quantity">
+    <input id="txtSearchCards" type="cards" placeholder="Search for Cards">
+    <input id="intSearchCardsQuantity" type="cards" placeholder="Quantity">
+    <select id="cardCondition">
+      <option value="nm">Near Mint</option>
+      <option value="lp">Light Play</option>
+      <option value="mp">Moderate Play</option>
+      <option value="hp">Heavy Play</option>
+      <option value="dmg">Damaged</option>
+    </select>
     <button id="btnAddCardToList" class="btn btn-action" onclick="addCardToList()">
       Add to List
     </button>
     <div class="container">
-      <button id="btnAddToTradeBinder" class="btn btn-action" onclick="addToTradeBinder()">
-        Add All Cards
+      <button id="btnSave" class="btn btn-action" onclick="updateTradeBinder()">
+        Save
       </button>
     </div>
     <p id="demo"></p>
