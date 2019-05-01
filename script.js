@@ -34,7 +34,6 @@ function returnCards(){
 
   document.getElementById("search-button").addEventListener("click", cardSearchFunc()); // Listens for the Search Button to be CLicked
 
-
   /* EXPERIMENTAL Code
       Purpose is to open the serach.html doc
       and return all search results there.
@@ -98,14 +97,24 @@ function returnCards(){
     cardCostHeadCol.id = "return-card-header";
     cardCostHeadCol.innerHTML = "COST";
 
-    var cardBtnHeadCol = document.createElement('th');
-    cardBtnHeadCol.id = "return-card-header";
-    cardBtnHeadCol.innerHTML = "FIND TRADE";
+    var cardSetHeadCol = document.createElement('th');
+    cardSetHeadCol.id = "return-card-header";
+    cardSetHeadCol.innerHTML = "SET";
+
+    var cardTradeBtnHeadCol = document.createElement('th');
+    cardTradeBtnHeadCol.id = "return-card-header";
+    cardTradeBtnHeadCol.innerHTML = "ADD TO BINDER";
+
+    var cardWantBtnHeadCol = document.createElement('th');
+    cardWantBtnHeadCol.id = "return-card-header";
+    cardWantBtnHeadCol.innerHTML = "ADD TO WANT LIST";
 
     cardRow.appendChild(cardNameHeadCol);
     cardRow.appendChild(cardCostHeadCol);
+    cardRow.appendChild(cardSetHeadCol);
     // cardRow.appendChild(cardLinkHeadCol);
-    cardRow.appendChild(cardBtnHeadCol);
+    cardRow.appendChild(cardTradeBtnHeadCol);
+    cardRow.appendChild(cardWantBtnHeadCol);
 
     cardTable.appendChild(cardRow);
 
@@ -154,18 +163,40 @@ function returnCards(){
     cardPriceCol.innerHTML = "999$";
     cardRow.appendChild(cardPriceCol);
 
-    var cardBtnCol = document.createElement('TD');
-    cardBtnCol.id = "return-card-col";
+    var cardSetCol = document.createElement('TD');
+    cardSetCol.id = "return-card-col";
+    cardSetCol.innerHTML = "menu here";
+    cardRow.appendChild(cardSetCol);
+
+    var cardBtnTradeCol = document.createElement('TD');
+    cardBtnTradeCol.id = "return-card-col";
+
+    var cardBtnWantCol = document.createElement('TD');
+    cardBtnWantCol.id = "return-card-col";
 
     var tradeNowButton = document.createElement('button');
     tradeNowButton.id = "return-card-btn";
-    tradeNowButton.innerHTML = "Find " + name.italics().bold() + " For Trade";
+    tradeNowButton.innerHTML = "Add " + name.italics().bold() + " to Trade Binder";
+
+    var wantNowButton = document.createElement('button');
+    wantNowButton.id = "return-card-btn";
+    wantNowButton.innerHTML = "Add " + name.italics().bold() + " to Want List";
 
     //cardBtnCol.innerHTML = tradeNowButton;
-    cardRow.appendChild(cardBtnCol);
-    cardBtnCol.appendChild(tradeNowButton);
+    cardRow.appendChild(cardBtnTradeCol);
+    cardBtnTradeCol.appendChild(tradeNowButton);
+
+    //cardBtnCol.innerHTML = tradeNowButton;
+    cardRow.appendChild(cardBtnWantCol);
+    cardBtnWantCol.appendChild(wantNowButton);
 
     return cardRow;
+  }
+
+  function writeUserAddToBinder(cardId) {
+    firebase.database().ref('users/' + userID + '/tradeBinder/' + cardId).set({
+      username: name,
+    });
   }
 
   /* Alerts User when no Value is Entered in Search Box */
